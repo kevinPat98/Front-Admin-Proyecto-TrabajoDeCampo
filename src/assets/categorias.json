@@ -1,0 +1,12 @@
+[
+    {
+        "titulo":"Baloncesto",
+        "slug":"baloncesto",
+        "_id": "50000"
+    },
+    {
+        "titulo":"Futbol",
+        "slug":"futbol",
+        "_id": "25000"
+    }     
+]
