@@ -115,7 +115,8 @@
                   <thead>
                     <tr>
                       <th>Producto</th>
-                      <th>P. Colombianos</th>
+                      <th>P. soles</th>
+                      <th>p. dolares</th>
                       <th>Stock</th>
                       <th>Opciones</th>
                     </tr>
@@ -146,7 +147,10 @@
                     
                       </td>
                       <td>
-                        {{item.precio|currency:'COP'}}
+                        {{item.precio|currency:'PEN'}}
+                      <td>
+                        {{item.precio_dolar|currency:'USD'}}
+                      </td>
                       <td>
                         {{item.stock}}
                       </td>

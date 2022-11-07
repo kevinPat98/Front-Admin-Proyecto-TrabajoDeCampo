@@ -52,6 +52,7 @@ export class AdminService {
     fd.append('titulo',data.titulo);
     fd.append('etiquetas',JSON.stringify(data.etiquetas));
     fd.append('precio',data.precio);
+    fd.append('precio_dolar',data.precio_dolar);
     fd.append('peso',data.peso);
     fd.append('sku',data.sku);
     fd.append('descripcion',data.descripcion);
@@ -96,7 +97,9 @@ export class AdminService {
       fd.append('titulo',data.titulo);
       fd.append('stock',data.stock);
       fd.append('precio_antes_soles',data.precio_antes_soles);
+      fd.append('precio_antes_dolares',data.precio_antes_dolares);
       fd.append('precio',data.precio);
+      fd.append('precio_dolar',data.precio_dolar);
       fd.append('peso',data.peso);
       fd.append('sku',data.sku);
       fd.append('descripcion',data.descripcion);

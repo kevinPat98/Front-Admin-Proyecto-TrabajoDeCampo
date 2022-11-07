@@ -52,23 +52,25 @@
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Monto Pesos</label>
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Monto soles</label>
                         <div class="col-sm-6">
                           <input type="text" class="form-control" name="monto_min_soles" [(ngModel)]="config.monto_min_soles">
                         </div>
                     </div>
-                    <!--<div class="row mb-3">
+                    <div class="row mb-3">
                         <label for="inputEmail3" class="col-sm-2 col-form-label">Monto dolares</label>
                         <div class="col-sm-6">
                           <input type="text" class="form-control" name="monto_min_dolares" [(ngModel)]="config.monto_min_dolares">
                         </div>
-                    </div>-->
+                    </div>
                     <div class="row mb-3">
                         <label for="inputEmail3" class="col-sm-2 col-form-label">Activación</label>
                         <div class="col-sm-6">
                             <select class="form-control" name="envio_activacion" [(ngModel)]="config.envio_activacion">
                                 <option value="Desactivado" >Desactivado</option>
-                                <option value="Colombia">Colombia</option>
+                                <option value="Perú">Perú</option>
+                                <option value="Exterior">Exterior</option>
+                                <option value="Todo el mundo">Todo el mundo</option>
                             </select>
                         </div>
                     </div>
