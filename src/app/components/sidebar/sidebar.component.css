@@ -1,0 +1,7 @@
+nav#sidebar {
+  background-color: #4e73df;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}

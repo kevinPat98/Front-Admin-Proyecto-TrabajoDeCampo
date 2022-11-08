@@ -189,7 +189,7 @@
                                       <table class="table">
                                             <thead>
                                                 <th>Producto</th>
-                                                <th>Talla</th>
+                                                <th>Variedad</th>
                                                 <th>Stock</th>
                                                 <th>Acción</th>
                                             </thead>
@@ -244,8 +244,8 @@
                                 <table class="table table-striped">
                                   <thead>
                                     <tr>
-                                      <th>Producucto</th>
-                                      <th>Talla</th>
+                                      <th>Producto</th>
+                                      <th>Variedad</th>
                                       <th>Precio</th>
                                       <th>Cantidad</th>
                                       <th>Subtotal</th>
@@ -256,9 +256,9 @@
                                     <tr *ngFor="let item of dventa; let idx = index">
                                       <th scope="row">{{item.titulo_producto}}</th>
                                       <td>{{item.titulo_variedad}}</td>
-                                      <td>{{item.precio_und|currency:'PEN'}}</td>
+                                      <td>{{item.precio_und|currency:'COP'}}</td>
                                       <td>{{item.cantidad}}</td>
-                                      <td>{{item.subtotal|currency:'PEN'}}</td>
+                                      <td>{{item.subtotal|currency:'COP'}}</td>
                                       <td>
                                           <a style="cursor: pointer;" class="text-danger" (click)="quitar(idx,item.subtotal)">[Delete]</a>
                                       </td>
@@ -267,7 +267,7 @@
                                   <tfoot>
                                       <tr>
                                           <td colspan="5"><b>Total</b></td>
-                                          <td>{{total_pagar|currency:'PEN'}}</td>
+                                          <td>{{total_pagar|currency:'COP'}}</td>
                                       </tr>
                                   </tfoot>
                                 </table>
@@ -277,7 +277,7 @@
                             <div class="row">
                                 <div class="col-4">
                                     <label for="validationCustom01" class="form-label"><b>Total a pagar: (*)</b></label>
-                                    <h3>{{neto_pagar|currency:'PEN'}}</h3>
+                                    <h3>{{neto_pagar|currency:'COP'}}</h3>
                                 </div>
                             </div>
                         </div>

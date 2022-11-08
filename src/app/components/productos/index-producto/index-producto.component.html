@@ -115,8 +115,8 @@
                   <thead>
                     <tr>
                       <th>Producto</th>
-                      <th>P. soles</th>
-                      <th>p. dolares</th>
+                      <th>P. pesos</th>
+                      <!-- <th>p. dolares</th> -->
                       <th>Stock</th>
                       <th>Opciones</th>
                     </tr>
@@ -147,10 +147,10 @@
                     
                       </td>
                       <td>
-                        {{item.precio|currency:'PEN'}}
-                      <td>
+                        {{item.precio|currency:'COP'}}
+                      <!-- <td>
                         {{item.precio_dolar|currency:'USD'}}
-                      </td>
+                      </td> -->
                       <td>
                         {{item.stock}}
                       </td>
